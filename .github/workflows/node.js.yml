@@ -32,6 +32,9 @@ jobs:
     - name: Build project
       run: npm run build --if-present
       working-directory: ./promotional
+      
+    - name: List Files After Build
+      run: ls -R ./promotional
   deploy:
       needs: build
       runs-on: ubuntu-latest
