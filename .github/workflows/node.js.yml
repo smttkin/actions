@@ -49,6 +49,7 @@ jobs:
       uses: actions/download-artifact@v3
       with:
         name: build-artifacts
+        path: ./dist
 
     - name: FTP Deployment
       uses: airvzxf/ftp-deployment-action@latest
@@ -56,5 +57,5 @@ jobs:
         server: ${{ secrets.FTP_SERVER }} 
         user:  ${{ secrets.FTP_USERNAME }}
         password:  ${{ secrets.FTP_PASSWORD }}
-        local_dir: ./promotional/dist # Değiştirildi
+        local_dir: ./dist # Değiştirildi
         remote_dir: ./
