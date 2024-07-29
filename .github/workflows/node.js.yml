@@ -29,10 +29,10 @@ jobs:
         cache: 'npm'
         cache-dependency-path: '**/package-lock.json'
     - name: List root directory for debugging
-    - run: ls -la
+      run: ls -la
 
     - name: List ./promotional directory for debugging
-    - run: ls -la ./promotional
+      run: ls -la ./promotional
     - run : | 
        cd promotional
        npm ci
