@@ -49,7 +49,7 @@ jobs:
             # FTP Password.
             password:  ${{ secrets.FTP_PASSWORD }}
             # Local directory.
-            local_dir: ./
+            local_dir: ./promotional/dist
             # Remote directory.
             remote_dir: ./
         
