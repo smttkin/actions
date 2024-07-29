@@ -37,6 +37,11 @@ jobs:
       runs-on: ubuntu-latest
       name: Deploy
       steps:            
+        - name: List root directory for debugging
+          run: ls -la
+
+        - name: List promotional/promotional directory for debugging
+          run: ls -la promotional/promotional
         - name: FTP Deployment
           # You may pin to the exact commit or the version.
           # uses: airvzxf/ftp-deployment-action@5483542d9d0055601ff0bf09c1e552f3a95c9ff8
