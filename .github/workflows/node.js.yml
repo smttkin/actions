@@ -59,3 +59,4 @@ jobs:
         password:  ${{ secrets.FTP_PASSWORD }}
         local_dir: ./dist # Değiştirildi
         remote_dir: ./
+        max_retries: 10
